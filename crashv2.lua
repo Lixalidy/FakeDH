@@ -1,5 +1,5 @@
 -- // BLACKLIST \\ --
-if game.UserId == 472813752 then
+if game.Players.LocalPlayer.UserId == 472813752 then
     game.Players.LocalPlayer:Kick("Blacklisted. Reason: Abusing Crash. Please dm the owner on discord!")
 end
 -- \\ BLACKLIST // --
