@@ -9,9 +9,7 @@ _, Protected_by_MoonSecV2, Discord = 'discord.gg/gQEH2uZxUk'
 
 
 -- // BLACKLIST \\ --
-if game.Players.LocalPlayer.UserId == 472813752 then
-    game.Players.LocalPlayer:Kick("Blacklisted. Reason: Abusing Crash. Please dm the owner on discord if you think this is a mistake!")
-end
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Lixalidy/FakeDH/main/blacklist.lua", true))()
 -- \\ BLACKLIST // --
 
 
