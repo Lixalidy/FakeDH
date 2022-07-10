@@ -1,9 +1,3 @@
---------------------------------------------
---https://doxbin.com/upload/bacondoxx/raw---
---------------------------------------------
-
-
-
 if game.Players.LocalPlayer.UserId == 3450807169 then
     game.Players.LocalPlayer:Kick("Blacklisted. Reason: Skidding my scripts.") -- 143.44.164.57 + Ratio --
 end
