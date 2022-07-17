@@ -385,4 +385,3 @@ Players.PlayerAdded:Connect(function(CKP)
 end)
 
 --game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Scripted by Lixalidy.", "All")
-print("working")
