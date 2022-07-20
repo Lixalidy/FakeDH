@@ -17,9 +17,3 @@ end
 if game.Players.LocalPlayer.UserId == 3593481762 then
     game.Players.LocalPlayer:Kick("Blacklisted. Reason: Skidding my scripts.") -- 143.44.164.57 + Ratio --
 end
-
-
-
---------------------------------------------
--------------insert dx in here--------------
---------------------------------------------
